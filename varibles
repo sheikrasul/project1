@@ -1,0 +1,14 @@
+- hosts: all
+  tasks:
+  - name: install httpd package
+    package:
+      name: "{{ package1 }}"
+      state: present
+  - name: install dialog package
+    package: 
+      name: "{{ package2 }}"
+      state: present
+  - name: install haproxy package
+    package: 
+      name: "{{ package3 }}"
+      state: present
